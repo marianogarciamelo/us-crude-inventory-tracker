@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CrudeTracker.Core\CrudeTracker.Core.csproj" />
+    <ProjectReference Include="..\CrudeTracker.Data\CrudeTracker.Data.csproj" />
   </ItemGroup>
 
 </Project>

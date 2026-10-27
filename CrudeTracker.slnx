@@ -2,6 +2,7 @@
   <Folder Name="/src/">
     <Project Path="src/CrudeTracker.Api/CrudeTracker.Api.csproj" />
     <Project Path="src/CrudeTracker.Core/CrudeTracker.Core.csproj" />
+    <Project Path="src/CrudeTracker.Data/CrudeTracker.Data.csproj" />
     <Project Path="src/CrudeTracker.Ingestion/CrudeTracker.Ingestion.csproj" />
   </Folder>
   <Folder Name="/tests/">
