@@ -14,4 +14,5 @@ var observations = await client.FetchAsync("WCESTUS1");
 foreach (var obs in observations)
 {
     Console.WriteLine(obs);
+    
 }

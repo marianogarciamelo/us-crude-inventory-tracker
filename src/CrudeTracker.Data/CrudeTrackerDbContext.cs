@@ -15,6 +15,7 @@ public class CrudeTrackerDbContext(DbContextOptions<CrudeTrackerDbContext> optio
         {
             e.ToTable("series");
             e.HasKey(s => s.Code);
+            e.HasData(new Series("WCESTUS1", "U.S. Ending Stocks excluding SPR of Crude Oil", "Thousand Barrels"));
         });
 
         modelBuilder.Entity<Observation>(e =>

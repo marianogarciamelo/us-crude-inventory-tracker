@@ -62,6 +62,14 @@ namespace CrudeTracker.Data.Migrations
                         .HasName("pk_series");
 
                     b.ToTable("series", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Code = "WCESTUS1",
+                            Description = "U.S. Ending Stocks excluding SPR of Crude Oil",
+                            Units = "Thousand Barrels"
+                        });
                 });
 
             modelBuilder.Entity("CrudeTracker.Core.Observation", b =>
