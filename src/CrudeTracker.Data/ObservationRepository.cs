@@ -12,11 +12,16 @@ public class ObservationRepository
 
     public async Task<HashSet<DateOnly>> GetExistingDatesAsync(string seriesCode)
     {
-        throw new NotImplementedException();
+        return await _db.Observations
+            .Where(o => o.SeriesCode == seriesCode)
+            .Select(o=>o.Period) // => means for each o get the period
+            .ToHashSetAsync(); //run and collect to set
     }
 
     public async Task<int> AddObservationsAsync(List<Observation> observations)
     {
-        throw new NotImplementedException();
+        _db.Observations.AddRange(observations);
+        return await _db.SaveChangesAsync();
+
     }
 }
